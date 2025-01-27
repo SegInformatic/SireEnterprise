@@ -16,8 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from gob.views.views import login_view, logout_view, aviso_privacidad_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('gob/', include('gob.urls')),
+    path('login/', login_view, name='login'),
+    path('logout/', logout_view, name='logout'),
+    path('aviso-privacidad/', aviso_privacidad_view, name='aviso_privacidad'),
 ]
