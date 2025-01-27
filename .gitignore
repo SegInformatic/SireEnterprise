@@ -1,0 +1,38 @@
+# Archivos del entorno de Python
+*.py[cod]
+__pycache__/
+
+# Entorno virtual
+venv/
+.env
+
+# Configuración local de Django
+*.sqlite3
+db.sqlite3
+
+# Archivos de configuración de entorno y secretos
+.env
+*.env
+
+# Archivos estáticos y subidos por el usuario
+staticfiles/
+media/
+uploads/
+
+# Archivos de paquetes y distribuciones
+*.egg
+*.egg-info
+dist/
+build/
+*.egg-info/
+
+# Archivos de caché y logs
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos de IDE (Integrated Development Environment)
+.idea/
+.vscode/
