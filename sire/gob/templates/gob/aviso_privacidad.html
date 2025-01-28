@@ -4,13 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aviso de Privacidad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h3 {
+            color: #555;
+            margin-top: 20px;
+        }
+        p, ul {
+            margin-bottom: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
-    <h2>Aviso de Privacidad</h2>
-    <p>
-        Este es el aviso de privacidad de SireEnterprise. Aquí puedes incluir detalles sobre cómo se
-        manejan los datos de los usuarios según las leyes aplicables.
-    </p>
-    <a href="{% url 'login' %}">Volver al login</a>
+    <div class="container">
+        <h2>Aviso de Privacidad</h2>
+        <p>
+            AVISO DE PRIVACIDAD DE SIREENTERPRICE
+            A través del presente Aviso de Privacidad ("Aviso de Privacidad"), le comunicamos las condiciones y garantías a través de las cuales Sireenterprice, en su calidad de responsable del Tratamiento, tratará sus Datos Personales.
+        </p>
+        <h3>¿Qué tipo de datos personales recolectamos?</h3>
+        <p>A través de nuestra aplicación web, recolectamos los siguientes datos personales:</p>
+        <ul>
+            <li>Datos de identificación: Nombre completo, correo electrónico, número de teléfono</li>
+            <li>Datos de acceso: Usuario y contraseña</li>
+            <li>Datos de facturación: Dirección fiscal, RFC</li>
+            <li>Datos técnicos: Dirección IP, tipo de navegador, sistema operativo</li>
+            <li>Datos de uso: Historial de navegación dentro de la aplicación, preferencias de usuario</li>
+        </ul>
+        <h3>¿Con qué objetivo trataremos sus Datos Personales?</h3>
+        <p>Finalidades Primarias (necesarias para la relación jurídica):</p>
+        <ul>
+            <li>Creación y gestión de su cuenta de usuario</li>
+            <li>Autenticación y verificación de identidad</li>
+            <li>Procesamiento de pagos y facturación</li>
+            <li>Proporcionarles acceso a los servicios de la plataforma</li>
+            <li>Atención al cliente y soporte técnico</li>
+            <li>Cumplimiento de obligaciones fiscales y legales</li>
+        </ul>
+        <p>Finalidades Secundarias:</p>
+        <ul>
+            <li>Envío de notificaciones sobre nuevas características o actualizaciones</li>
+            <li>Análisis estadístico para mejorar nuestros servicios</li>
+            <li>Envío de comunicaciones promocionales y newsletter</li>
+            <li>Investigación y desarrollo de nuevas funcionalidades</li>
+        </ul>
+        <h3>Derechos ARCO y Mecanismos de Control</h3>
+        <p>Usted podrá ejercer sus derechos de Acceso, Rectificación, Cancelación y Oposición (ARCO) de la siguiente manera:</p>
+        <p>Enviando un correo electrónico a: sebastian.acosta.ortiz@gmail.com</p>
+        <p>Para ejercer estos derechos, deberá incluir:</p>
+        <ul>
+            <li>Nombre completo</li>
+            <li>Correo electrónico asociado a su cuenta</li>
+            <li>Descripción clara de su solicitud</li>
+            <li>Documentación que acredite su identidad</li>
+        </ul>
+        <h3>Transferencias de Datos</h3>
+        <p>Sus datos personales podrán ser transferidos y tratados dentro y fuera del país por personas distintas a Sireenterprice en los siguientes casos:</p>
+        <ul>
+            <li>Proveedores de servicios de hosting y almacenamiento en la nube</li>
+            <li>Procesadores de pago</li>
+            <li>Servicios de análisis y métricas</li>
+            <li>Autoridades competentes en caso de ser requerido por ley</li>
+        </ul>
+        <h3>Uso de Cookies y Tecnologías Similares</h3>
+        <p>Nuestra aplicación utiliza cookies y tecnologías similares para:</p>
+        <ul>
+            <li>Mantener su sesión activa</li>
+            <li>Recordar sus preferencias</li>
+            <li>Analizar el uso de la aplicación</li>
+            <li>Mejorar la experiencia del usuario</li>
+        </ul>
+        <h3>Cambios al Aviso de Privacidad</h3>
+        <p>Cualquier modificación a este aviso de privacidad será notificada a través de:</p>
+        <ul>
+            <li>Notificación en la aplicación</li>
+            <li>Correo electrónico registrado</li>
+            <li>Publicación en nuestro sitio web: [www.sireenterprice.com/privacidad]</li>
+        </ul>
+        <h3>Seguridad</h3>
+        <p>Implementamos medidas de seguridad administrativas, técnicas y físicas para proteger sus datos personales contra daño, pérdida, alteración, destrucción o uso no autorizado.</p>
+        <h3>Contacto</h3>
+        <p>Para cualquier duda sobre este aviso de privacidad o el tratamiento de sus datos personales, puede contactarnos en:</p>
+        <ul>
+            <li>Correo electrónico: sebastian.acosta.ortiz@gmail.com</li>
+            <li>Teléfono: 6141212866</li>
+        </ul>
+        <p>Fecha de última actualización: 27/01/2025</p>
+        <a href="{% url 'login' %}">Volver al login</a>
+    </div>
 </body>
 </html>
