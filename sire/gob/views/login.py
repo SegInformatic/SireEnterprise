@@ -25,3 +25,6 @@ def logout_view(request):
 
 def aviso_privacidad_view(request):
     return render(request, 'gob/aviso_privacidad.html')
+
+def deslinde_responsabilidad_view(request):
+    return render(request, 'gob/deslinde.html')
