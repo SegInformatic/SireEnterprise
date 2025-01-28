@@ -1,12 +1,19 @@
 from rest_framework.viewsets import ModelViewSet
+from rest_framework.authentication import TokenAuthentication
+from rest_framework.permissions import IsAuthenticated
 
 from gob.models import Cliente
 from gob.serializers import ClienteSerializer
+from gob.permissions import has_right_permission
+
 
 
 class ClienteViewSet(ModelViewSet):
+    required_right = 'cliente'
     model = Cliente
     serializer_class = ClienteSerializer
+    authentication_classes = [TokenAuthentication, IsAuthenticated]
+    permission_classes = [has_right_permission(required_right)]
 
     def get_queryset(self):
         user = self.request.user

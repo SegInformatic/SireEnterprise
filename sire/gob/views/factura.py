@@ -1,12 +1,19 @@
 from rest_framework.viewsets import ModelViewSet
+from rest_framework.authentication import TokenAuthentication
+from rest_framework.permissions import IsAuthenticated
 
 from gob.models import FacturaElectronica
 from gob.serializers import FacturaSerializer
+from gob.permissions import has_right_permission
 
 
 class FacturaElectronicaViewSet(ModelViewSet):
+    required_right = 'factura'
     model = FacturaElectronica
     serializer_class = FacturaSerializer
+
+    authentication_classes = [TokenAuthentication, IsAuthenticated]
+    permission_classes = [has_right_permission(required_right)]
 
     def get_queryset(self):
         user = self.request.user
