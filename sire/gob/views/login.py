@@ -13,7 +13,7 @@ def login_view(request):
             user = authenticate(request, username=username, password=password)
             if user is not None:
                 login(request, user)
-                return redirect('/')  # Cambia a la página que desees redirigir después de iniciar sesión
+                return redirect('/gob/empresa/')
             else:
                 messages.error(request, 'Usuario o contraseña incorrectos')
     return render(request, 'gob/login.html')
